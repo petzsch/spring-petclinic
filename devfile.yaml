@@ -9,7 +9,7 @@ projects:
 components:
   - alias: dev
     type: dockerimage
-    image: openjdk/11-jdk-buster
+    image: openjdk:11-jdk-buster
     mountSources: true
     endpoints:
       - name: petclinic-web-server
