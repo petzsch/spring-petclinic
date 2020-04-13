@@ -25,7 +25,7 @@ commands:
     actions:
       - type: exec
         component: dev
-        command: "cd $CHE_PROJECTS_ROOT/spring-petclinic && mvn clean install && cp $CHE_PROJECTS_ROOT/spring-petclinic/target/*.war $TOMCAT_HOME/webapps/ROOT.war && $TOMCAT_HOME/bin/catalina.sh run 2>&1"
+        command: "cd $CHE_PROJECTS_ROOT/spring-petclinic && ./mvnw clean install && cp $CHE_PROJECTS_ROOT/spring-petclinic/target/*.war $TOMCAT_HOME/webapps/ROOT.war && $TOMCAT_HOME/bin/catalina.sh run 2>&1"
   - name: stop
     actions:
       - type: exec
