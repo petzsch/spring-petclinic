@@ -7,7 +7,7 @@ projects:
       type: git
 components:
   - id: redhat/java/latest
-    memoryLimit: 1280MiB
+    memoryLimit: 1280Mi
     type: chePlugin
   - mountSources: true
     endpoints:
